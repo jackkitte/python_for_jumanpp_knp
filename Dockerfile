@@ -1,5 +1,4 @@
 FROM jackkitte/jumanpp_knp
-#FROM jumanpp_test
 LABEL maintainer="tamash"
 
 WORKDIR /home/tamash
