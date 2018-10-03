@@ -22,8 +22,8 @@ RUN sudo rm -fr /usr/bin/python3 && sudo ln /usr/bin/python3.7 /usr/bin/python3
 RUN sudo pip3 install pipenv
 
 # Install pyknp
+WORKDIR /home/tamash/work
 RUN pipenv install pyknp
 
 # workディレクトリへzshでattach
-WORKDIR /home/tamash/work
 ENTRYPOINT [ "/bin/zsh" ]
