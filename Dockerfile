@@ -19,7 +19,7 @@ RUN curl --silent https://bootstrap.pypa.io/get-pip.py | sudo python3.7
 # Backwards compatility
 RUN sudo rm -fr /usr/bin/python3 && sudo ln /usr/bin/python3.7 /usr/bin/python3
 
-RUN sudo pip3 install pipenv
+RUN sudo pip install pipenv
 
 # workディレクトリへzshでattach
 WORKDIR /home/tamash/work
